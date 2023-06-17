@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  openresty:
+    image: srajasimman/openresty-prometheus:v1.0
+    ports:
+      - "8080:80"
+      - "9145:9145"
+    volumes:
+      - ./sites/default.conf:/etc/nginx/conf.d/default.conf
+      - ./public:/usr/share/nginx/html
