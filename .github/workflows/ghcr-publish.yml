@@ -6,12 +6,10 @@ name: Publish Github Container Registry
 # documentation.
 
 on:
-  schedule:
-    - cron: '37 7 * * *'
+  # schedule:
+  #   - cron: '37 7 * * *'
   push:
-    branches: [ "main" ]
-    # Publish semver tags as releases.
-    tags: [ 'v*.*' ]
+    tags: [ 'v*.*','latest' ]
   pull_request:
     branches: [ "main" ]
 

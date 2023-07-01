@@ -1,9 +1,12 @@
 name: Publish Docker Hub
 
 on:
+  # schedule:
+  #   - cron: '37 7 * * *'
   push:
-    tags:
-      - '*'
+    tags: [ 'v*.*','latest' ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
   build:
