@@ -1,7 +1,7 @@
 # Derived Dockerfile Example using `opm`
 # https://github.com/openresty/docker-openresty
 #
-# Installs openresty-opm and then uses opm to install pgmoon.
+# Installs openresty-opm and then uses opm to install knyar/nginx-lua-prometheus.
 #
 
 FROM openresty/openresty:buster
