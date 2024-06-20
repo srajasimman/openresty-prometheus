@@ -2,7 +2,7 @@ version: "3"
 
 services:
   openresty:
-    image: srajasimman/openresty-prometheus:v1.0
+    image: srajasimman/openresty-prometheus:latest
     ports:
       - "8080:80"
       - "9145:9145"
