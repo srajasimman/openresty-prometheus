@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/4acbd053-18a6-4963-9ef7-ff8201507d36)
+
 # OpenResty/Nginx monitoring with Prometheus
 openresty-prometheus is a module to monitor the Nginx web server and reverse-proxy using Prometheus and Grafana. This tool allows you to collect and visualize various Nginx metrics to ensure your server is running optimally.
 
