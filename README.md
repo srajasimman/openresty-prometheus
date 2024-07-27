@@ -33,7 +33,7 @@ docker build -t openresty-prometheus .
 3. Run the Docker container:
 
 ```sh
-docker run -d -p 80:80 -p 9113:9113 openresty-prometheus
+docker run -d -p 80:80 -p 9145:9145 openresty-prometheus
 ```
 
 ## Configuration
@@ -49,14 +49,14 @@ cp prometheus.conf /etc/nginx/conf.d/
 scrape_configs:
   - job_name: 'nginx'
     static_configs:
-      - targets: ['<nginx-server-ip>:9113']
+      - targets: ['<nginx-server-ip>:9145']
 ```
 
 ## Usage
 Once your Docker container is running, you can access the metrics at:
 
 ```sh
-curl -s "http://<your-server-ip>:9113/metrics"
+curl -s "http://<your-server-ip>:9145/metrics"
 ```
 
 ## Visualization with Grafana
